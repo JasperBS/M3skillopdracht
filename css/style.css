@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    padding-left: 40px;
+}
+
+.headerTitle {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.headerButton {
+    background: transparent;
+    border: none;
+}
+
+
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.hamburger-menu:hover {
+    transform: scale(1.10);
+}
+
+.hamburger-menu:not(:hover) {
+    transform: scale(0.95);
+}
+
+.bar {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.mainNavigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.mainNavigationList {
+    list-style: none;
+}
+
+.mainNavigationListItem {
+    color: white;
+    font-size: 350%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mainNavigationListItem>a {
+    color: white;
+    text-decoration: none;
+}
+
+.bigPicture {
+    width: 100%;
+    height: 130vh;
+    max-height: 95vh;
+}
+
+.bigPicture>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.sections {
+    width: 100%;
+    padding: 40px;
+}
+
+.collectionsTitle,
+.infoTitle {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.collectionsList {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.collectionsListItem {
+    width: 400px;
+    height: 600px;
+    background: black;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.collectionsListItem>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.collectionsListItem>img:hover {
+    transform: scale(1.03);
+}
+
+.info {
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 400px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: black;
+    height: 120px;
+    color: white;
+}
+
+.footerNavigationList {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footerNavigationListItem {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.footerNavigationListItem>a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    margin-left: 1350px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.form {
+    width: 30rem;
+    max-width: 50rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    gap: 1rem;
+    background-color: gray;
+    border-radius: 7rem;
+    border: 1rem solid rgb(23, 23, 23);
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding-bottom: 0;
+}
+
+.nco {
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.form input,
+.form button {
+    width: 22rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    border: 1rem solid #ccc;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form textarea {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    border: 1rem solid #ccc;
+    margin-bottom: 0.8rem;
+    background-color: #fff;
+    resize: none;
+    height: 10rem;
+    width: 22rem;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form input:hover,
+.form textarea:hover 
+{
+    border-color: rgb(114, 114, 114);
+    outline: none;
+}
+
+.form input:focus,
+.form textarea:focus
+{
+    border-color: rgb(73, 73, 73);
+    outline: none;
+}
+
+.form button {
+    font-size: 1.4rem;
+    border: none;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    padding: 1.5rem;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.form button:hover {
+    background-color: #a90000;
+    transform: scale(1.05);
+}
+
+.form button:active {
+    background-color: #a90000;
+    transform: scale(1);
+}
